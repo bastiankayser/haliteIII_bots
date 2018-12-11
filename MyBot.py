@@ -68,6 +68,7 @@ while True:
                             halite_amount *= 4
                         halite_dict[direction] = halite_amount
     
+                # this might crash if we have nowhere to go
                 directional_choice = max(halite_dict, key=halite_dict.get)
                 position_choices.append(position_dict[directional_choice])
     
